@@ -22,33 +22,23 @@ To run this project locally:
 
 Clone the repository
 
-bash
-Copy
-Edit
-git clone https://github.com/akmal/movie-app.git
+git clone https://github.com/akmaaltaufiq/movie-app.git
 cd movie-app
 Install dependencies
 
-bash
-Copy
-Edit
 npm install
 Set up environment variables
 
 Create a .env file in the root directory and add your TMDB API key:
 
 env
-Copy
-Edit
 VITE_API_KEY=your_tmdb_key_here
 Start the development server
 
-bash
-Copy
-Edit
 npm run dev
-🌍 Live Demo
-🔗 movie-app-akmaaltaufiq.vercel.app
+🌍 Live Demo & Repository
+🔗 https://movie-app-akmaaltaufiq.vercel.app/
+🔗 https://github.com/akmaaltaufiq/movie-app
 
 🖼️ Screenshots
 Home Page Search Results
