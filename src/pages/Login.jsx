@@ -18,7 +18,7 @@ export default function Login() {
       login("dummy-token");
       navigate("/");
     } else {
-      setError("Username atau password salah.");
+      setError("Incorrect username or password.");
     }
   };
 
