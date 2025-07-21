@@ -13,13 +13,24 @@ export default function Detail() {
       .catch(() => setError("An error occurred while fetching movie details."));
   }, [id]);
 
-  if (error) return <p className="p-4 text-red-500">{error}</p>;
-  if (!movie) return <p className="p-4 text-gray-300">Loading...</p>;
+  if (error)
+    return (
+      <p className="p-4 text-red-700 bg-red-100 rounded max-w-4xl mx-auto mt-20">
+        {error}
+      </p>
+    );
+
+  if (!movie)
+    return (
+      <p className="p-4 text-gray-600 text-center max-w-4xl mx-auto mt-20">
+        Loading...
+      </p>
+    );
 
   return (
-    <div className="pt-24 px-4 max-w-6xl mx-auto flex flex-col md:flex-row gap-8 text-gray-100">
+    <div className="pt-24 px-4 max-w-6xl mx-auto flex flex-col md:flex-row gap-8 text-gray-800 bg-white">
       <img
-        className="w-full max-w-sm rounded-xl shadow-lg"
+        className="w-full max-w-sm rounded-xl shadow-md"
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         alt={movie.title}
       />
@@ -27,11 +38,11 @@ export default function Detail() {
       <div className="flex-1 space-y-4">
         <h1 className="text-3xl font-bold">{movie.title}</h1>
         {movie.tagline && (
-          <p className="text-lg italic text-gray-400">"{movie.tagline}"</p>
+          <p className="text-lg italic text-gray-500">"{movie.tagline}"</p>
         )}
         <p className="text-base leading-relaxed">{movie.overview}</p>
 
-        <div className="mt-6 space-y-2 text-sm md:text-base">
+        <div className="mt-6 space-y-2 text-sm md:text-base text-gray-700">
           <p>
             <strong>Release Date:</strong> {movie.release_date}
           </p>
