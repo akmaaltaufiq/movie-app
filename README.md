@@ -42,7 +42,7 @@ Copy code
 
 ## 🌐 Live Preview
 
-Live demo 👉 [https://movie-app-akmal.vercel.app](https://movie-app-akmal.vercel.app)
+Live demo 👉 [https://movie-app-akmal.vercel.app](https://movie-app-akmaaltaufiq.vercel.app/)
 
 ## 📷 Evidence
 
