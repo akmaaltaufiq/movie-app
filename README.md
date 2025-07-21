@@ -1,56 +1,58 @@
-# Movie App - Talent Growth Challenge
+🎬 Movie App – Talent Growth Challenge
+This project is a simple movie browsing application built with React as part of the Talent Growth Challenge submission.
 
-This project is a simple movie browser application built using React. Users can:
+✨ Features
+🔥 Display the top 50 popular movies on the homepage
 
-- View top 50 popular movies on the homepage
-- Search for movies by title
-- See results dynamically updated based on search queries
+🔍 Search for movies by title using the TMDB API
 
-## 🔧 Technologies
+⚡ Real-time search results as users type
 
-- React
-- React Router
-- TMDB API
-- CSS Modules / Tailwind (sesuaikan dengan projectmu)
+🛠️ Tech Stack
+React
 
-## 🚀 How to Run Locally
+React Router DOM
 
-1. Clone this repo:
-   git clone https://github.com/akmal/movie-app.git
-   cd movie-app
+TMDB API
 
-markdown
-Copy code
+Tailwind CSS
 
-2. Install dependencies:
-   npm install
+🚀 Getting Started Locally
+To run this project locally:
 
-markdown
-Copy code
+Clone the repository
 
-3. Create `.env` file:
-   VITE_API_KEY=your_tmdb_key_here
+bash
+Copy
+Edit
+git clone https://github.com/akmal/movie-app.git
+cd movie-app
+Install dependencies
 
-markdown
-Copy code
+bash
+Copy
+Edit
+npm install
+Set up environment variables
 
-4. Run the project:
-   npm run dev
+Create a .env file in the root directory and add your TMDB API key:
 
-markdown
-Copy code
+env
+Copy
+Edit
+VITE_API_KEY=your_tmdb_key_here
+Start the development server
 
-## 🌐 Live Preview
+bash
+Copy
+Edit
+npm run dev
+🌍 Live Demo
+🔗 movie-app-akmaaltaufiq.vercel.app
 
-Live demo 👉 [https://movie-app-akmal.vercel.app](https://movie-app-akmaaltaufiq.vercel.app/)
+🖼️ Screenshots
+Home Page Search Results
 
-## 📷 Evidence
-
-![Screenshot Home](./screenshots/home.png)
-![Screenshot Search](./screenshots/search.png)
-
-## 🧩 Assumptions or Limitations
-
-- Only displays 50 movies on homepage.
-- No pagination for now.
-- Limited to TMDB’s free-tier search results.
+⚠️ Assumptions & Limitations
+Displays only top 50 popular movies (no pagination)
+Search is limited by TMDB's free-tier API capabilities
